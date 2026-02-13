@@ -1,0 +1,63 @@
+
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" xmlns="http://www.w3.org/2000/svg">
+  <title>Aurora Studio — Baseline Design Spec (Import to Figma)</title>
+  <defs>
+    <linearGradient id="heroGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f9ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1440" height="68" fill="#ffffff"/>
+  <rect x="0" y="67" width="1440" height="1" fill="#eef1f8"/>
+  <circle cx="72" cy="34" r="18" fill="#5b7cff"/>
+  <text x="102" y="42" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="22" fill="#232a46">Aurora</text>
+  <text x="1050" y="42" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="16" fill="#3a4158">特長     ギャラリー     お問い合わせ</text>
+  <rect x="1280" y="20" width="110" height="32" rx="16" fill="#5b7cff"/>
+  <text x="1308" y="42" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="14" fill="#fff">無料相談</text>
+
+  <!-- Hero -->
+  <rect x="0" y="68" width="1440" height="360" fill="url(#heroGrad)"/>
+  <text x="120" y="200" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="44" letter-spacing="-0.02em" fill="#1f2745">
+    デザインは、もっと軽やかに。
+  </text>
+  <text x="120" y="238" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="18" fill="#5c647d">
+    視認性・一貫性・余白・配色・レスポンシブ… 正解のない要素を、プロセスで解きほぐす。
+  </text>
+  <rect x="120" y="260" width="140" height="36" rx="18" fill="#5b7cff"/>
+  <text x="150" y="283" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="14" fill="#ffffff">詳細を見る</text>
+  <rect x="270" y="260" width="140" height="36" rx="18" fill="none" stroke="#e6e9f5"/>
+  <text x="300" y="283" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="14" fill="#1f2745">実績を見る</text>
+  <rect x="860" y="120" width="420" height="220" rx="24" fill="#ffffff" stroke="#e8ecf8"/>
+  <circle cx="920" cy="180" r="16" fill="#b7c4ff"/>
+  <circle cx="960" cy="180" r="16" fill="#b7c4ff"/>
+  <circle cx="1000" cy="180" r="16" fill="#b7c4ff"/>
+
+  <!-- Features -->
+  <rect x="0" y="428" width="1440" height="280" fill="#f7f9ff"/>
+  <text x="120" y="468" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="28" fill="#1f2745">特長</text>
+  <g filter="url(#cardShadow)">
+    <rect x="120" y="492" width="360" height="180" rx="16" fill="#fff" stroke="#e8ecf8"/>
+    <rect x="540" y="492" width="360" height="180" rx="16" fill="#fff" stroke="#e8ecf8"/>
+    <rect x="960" y="492" width="360" height="180" rx="16" fill="#fff" stroke="#e8ecf8"/>
+  </g>
+  <text x="140" y="520" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18" fill="#1f2745">デザインシステム</text>
+  <text x="560" y="520" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18" fill="#1f2745">アクセシビリティ</text>
+  <text x="980" y="520" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="18" fill="#1f2745">パフォーマンス</text>
+
+  <!-- Gallery -->
+  <text x="120" y="740" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="28" fill="#1f2745">ギャラリー</text>
+  <rect x="120" y="760" width="360" height="200" rx="14" fill="#fff" stroke="#e8ecf8"/>
+  <rect x="540" y="760" width="360" height="200" rx="14" fill="#fff" stroke="#e8ecf8"/>
+  <rect x="960" y="760" width="360" height="200" rx="14" fill="#fff" stroke="#e8ecf8"/>
+
+  <!-- Footer -->
+  <rect x="0" y="980" width="1440" height="44" fill="#ffffff"/>
+  <rect x="0" y="980" width="1440" height="1" fill="#eef1f8"/>
+  <text x="120" y="1006" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="12" fill="#5c6583">© 2025 Aurora Studio</text>
+  <text x="1240" y="1006" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="12" fill="#5c6583">プライバシー    利用規約</text>
+</svg>

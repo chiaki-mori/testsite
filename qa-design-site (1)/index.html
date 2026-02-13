@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurora Studio — デザイン比較用デモ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="assets/img/logo.png" alt="Aurora logo" class="logo" />
+      <nav class="nav">
+        <a href="#features">特長</a>
+        <a href="#gallery">ギャラリー</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <a class="btn primary" href="#contact">無料相談</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>デザインは、もっと軽やかに。</h1>
+          <p>視認性・一貫性・余白・配色・レスポンシブ… 正解のない要素を、プロセスで解きほぐす。</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#features">詳細を見る</a>
+            <a class="btn ghost" href="#gallery">実績を見る</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/img/hero.png" alt="Hero art" />
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>特長</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/img/feature1.png" alt="Design systems" />
+            <h3>デザインシステム</h3>
+            <p>タイポグラフィやスペーシングのトークン化で、設計変更にも強く。</p>
+          </article>
+          <article class="card">
+            <img src="assets/img/feature2.png" alt="Accessibility" />
+            <h3>アクセシビリティ</h3>
+            <p>コントラスト・フォーカス可視化・セマンティクスを重視。</p>
+          </article>
+          <article class="card">
+            <img src="assets/img/feature3.png" alt="Performance" />
+            <h3>パフォーマンス</h3>
+            <p>ペイロード最適化・CLS対策・スケールに強い設計。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>ギャラリー</h2>
+        <div class="grid gallery-grid">
+          <img src="assets/img/gallery1.png" alt="Case A" />
+          <img src="assets/img/gallery2.png" alt="Case B" />
+          <img src="assets/img/gallery3.png" alt="Case C" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>お問い合わせ</h2>
+          <p>小さな相談から大規模刷新まで。まずはお気軽に。</p>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('送信されました（ダミー）');">
+          <label>お名前 <input type="text" placeholder="山田 太郎" required></label>
+          <label>メール <input type="email" placeholder="taro@example.com" required></label>
+          <label>ご用件 <textarea placeholder="ご相談内容を記入ください" rows="4"></textarea></label>
+          <button class="btn primary" type="submit">送信</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2025 Aurora Studio</small>
+      <div class="links">
+        <a href="#">プライバシー</a>
+        <a href="#">利用規約</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Design Bug Panel -->
+  <div class="bug-panel" aria-live="polite">
+    <div class="bug-panel-head">
+      <strong>Design Bug Panel</strong>
+      <button class="btn ghost small" id="hideBugPanelBtn" type="button" aria-label="Design Bug Panelを非表示">非表示</button>
+    </div>
+    <label><input type="checkbox" data-bug="color"> 色ズレ（ブランドカラー誤り）</label>
+    <label><input type="checkbox" data-bug="font"> フォント/ウェイト不一致</label>
+    <label><input type="checkbox" data-bug="spacing"> 余白縮小（詰まり）</label>
+    <label><input type="checkbox" data-bug="align"> 整列崩れ（左寄せ化）</label>
+    <label><input type="checkbox" data-bug="contrast"> 低コントラスト</label>
+    <label><input type="checkbox" data-bug="grid"> グリッド崩壊（重なり）</label>
+    <label><input type="checkbox" data-bug="hero"> ヒーロー過拡大（はみ出し）</label>
+    <label><input type="checkbox" data-bug="missing"> 画像欠落（404）</label>
+    <label><input type="checkbox" data-bug="zindex"> z-index不具合（ヘッダー重なり）</label>
+    <label><input type="checkbox" data-bug="responsive"> レスポンシブ破壊（@media無効）</label>
+    <div class="bug-actions">
+      <button class="btn ghost small" id="randomizeBtn" type="button">ランダム</button>
+      <button class="btn small" id="resetBtn" type="button">リセット</button>
+    </div>
+    <div class="bug-hint">ショートカット: <kbd>P</kbd> で表示/非表示</div>
+  </div>
+
+  <!-- Show button (only appears when panel hidden) -->
+  <button class="bug-panel-fab" id="showBugPanelFab" type="button" aria-label="Design Bug Panelを表示">Bug Panel</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
